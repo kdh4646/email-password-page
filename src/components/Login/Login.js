@@ -55,28 +55,35 @@ const Login = (props) => {
   });
 
   /*
+    object destructuring : alias assignment
+    get isValid and save it to emailIsValid/passwordIsValid
+
+    optimizing userEffect()
+  */
+  const { isValid: emailIsValid } = emailState;
+  const { isValid: passwordIsValid } = passwordState;
+
+  /*
     in dependency, we can skip setFormIsValid
     since "State updating functions (such as setFormIsValid... setEnteredEmail...)
     by default are ensured React to NEVER changed"
   */
-  // useEffect(() => {
-  //   const identifier = setTimeout(() => {
-  //     setFormIsValid(
-  //       enteredEmail.includes("@") && enteredPassword.trim().length > 6
-  //     );
-  //   }, 500);
+  useEffect(() => {
+    const identifier = setTimeout(() => {
+      setFormIsValid(emailIsValid && passwordIsValid);
+    }, 500);
 
-  /*
+    /*
       useEffect can rerun a function
       it is called "Clean-Up" function
 
       1) it runs BEFORE every new side effect function execution
       2) it runs when a component is REMOVED from DOM only if dependency is EMPTY
     */
-  //   return () => {
-  //     clearTimeout(identifier);
-  //   };
-  // }, [enteredEmail, enteredPassword]);
+    return () => {
+      clearTimeout(identifier);
+    };
+  }, [emailIsValid, passwordIsValid]);
 
   const emailChangeHandler = (event) => {
     dispatchEmail({ type: "USER_INPUT", val: event.target.value });
