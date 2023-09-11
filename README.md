@@ -2,16 +2,19 @@
 > [!NOTE]
 > Reference : Code snapshots and materials for our "React - The Complete Guide" course (https://acad.link/reactjs)
 
-🚧 In progres.. 🚧
+# 🚧 In progres.. 🚧
 
 # 📖 Introduction
 - Implement a React Website
-<!--1. Build Core Components (e.g., AddUser Component)
-2. Manage State
-3. Output Users Conditionally & Show Error Modal -->
+1. Manage State
+   - useReducer()
+   - useEffect()
+   - useContext()
+3. ...
+4. ...
 
 # 👀 Screenshots
-<!-- <div>
-  <img align="left" src="https://github.com/kdh4646/user-info/assets/71913953/456e353f-53d3-4818-b5ba-4edba15fa903" width="45%"/>
-  //<img align="right" src="https://github.com/kdh4646/user-info/assets/71913953/387ec911-2a7c-4a1e-8282-0bb05a190e9e" width="45%"/>
-</div> -->
+<div>
+  <img align="left" src="https://github.com/kdh4646/email-password-page/assets/71913953/f82b14ac-7fd3-47c9-9a2b-b0fb91e93398" width="45%"/>
+  <img align="right" src="https://github.com/kdh4646/email-password-page/assets/71913953/300d1c05-0f9e-44b1-b3cb-88a9d70bfea5" width="45%"/>
+</div>
