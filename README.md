@@ -2,16 +2,14 @@
 > [!NOTE]
 > Reference : Code snapshots and materials for our "React - The Complete Guide" course (https://acad.link/reactjs)
 
-# 🚧 In progres.. 🚧
-
 # 📖 Introduction
 - Implement a React Website
 1. Manage State
    - useReducer()
    - useEffect()
    - useContext()
-3. ...
-4. ...
+   - useRef()
+   - useImperativeHandle() w/ React.fowardRef()
 
 # 👀 Screenshots
 <div>
